@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance To The Rythm of The Lights</title>
+    <link rel="icon" type="image/png" href="favicon_red.png">
+    	<!-- This website uses keyframe animations -->
+
+    <style>
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        html
+        { overflow: hidden;}
+
+
+        .rectangle { 
+    width: 100vw;
+    height: 1vh;
+    position: relative;
+    border-radius: 0%;
+    padding: 10vh;
+    }
+
+    .rectangle_vertical { 
+    width: 100vw;
+    height: 2vh;
+    position: relative;
+    animation: rectangle_vertical_animation 3s infinite;
+    border-radius: 50%;
+    animation-timing-function: ease-in-out;
+    padding: 20vh;
+    mix-blend-mode: difference;
+    animation-direction: alternate;
+}
+
+    @keyframes rectangle_vertical_animation {
+        0% {
+            transform: translateY(-600vh);
+        }
+
+
+        100% {
+            transform: translateY(-400vh);filter: hue-rotate(360deg);
+        }
+    }
+
+    </style>
+</head>
+<body style="background-color: blue;">
+    <p class="rectangle"; style="background-color: rgb(130, 255, 168)"> </p>
+    <p class="rectangle"; style="background-color: blue"> </p>
+    <p class="rectangle"; style="background-color: fuchsia"> </p>
+    <p class="rectangle"; style="background-color: yellow"> </p>
+    <p class="rectangle"; style="background-color: red"> </p>
+    <p class="rectangle"; style="background-color: rgb(130, 255, 168)"> </p>
+    <p class="rectangle"; style="background-color: blue"> </p>
+    <p class="rectangle"; style="background-color: fuchsia"> </p>
+    <p class="rectangle"; style="background-color: yellow"> </p>
+    <p class="rectangle"; style="background-color: red"> </p>
+    <p class="rectangle"; style="background-color: rgb(130, 255, 168)"> </p>
+    <p class="rectangle"; style="background-color: blue"> </p>
+    <p class="rectangle"; style="background-color: fuchsia"> </p>
+    <p class="rectangle"; style="background-color: yellow"> </p>
+    <p class="rectangle"; style="background-color: red"> </p>
+    <p class="rectangle"; style="background-color: rgb(130, 255, 168)"> </p>
+    <p class="rectangle"; style="background-color: blue"> </p>
+    <p class="rectangle"; style="background-color: fuchsia"> </p>
+    <p class="rectangle"; style="background-color: yellow"> </p>
+    <p class="rectangle"; style="background-color: red"> </p>
+    <p class="rectangle_vertical" style="background-color: fuchsia;"> </p>
+    <br>
+    <p class="rectangle_vertical" style="background-color: red;"> </p>
+    <br>
+    <p class="rectangle_vertical" style="background-color: rgb(130, 255, 168)"> </p>
+    <br>
+    <p class="rectangle_vertical" style="background-color: yellow;"> </p>
+    <br>
+    <p class="rectangle_vertical" style="background-color: blue;"> </p>
+    <p class="rectangle_vertical" style="background-color: fuchsia;"> </p>
+    <br>
+    <p class="rectangle_vertical" style="background-color: red;"> </p>
+    <br>
+    <p class="rectangle_vertical" style="background-color: rgb(130, 255, 168)"> </p>
+    <br>
+    <p class="rectangle_vertical" style="background-color: yellow;"> </p>
+    <br>
+    <p class="rectangle_vertical" style="background-color: blue;"> </p>
+</body>
+</html>
