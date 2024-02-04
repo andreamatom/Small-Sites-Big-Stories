@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,116 +11,124 @@
 
   <link rel="icon" type="image/png" href="favicon_blue.png">
 
-
   <style>
     * {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
+      box-sizing: border-box;}
 
     .main {
       padding: 120px;
       width: 100vw;
       height: 100vh;
-      background-color: blue;
+      background-color: rgba(0, 0, 255, 0.186);
       display: flex;
       align-items: center;
-      justify-content: center;
-    }
+      justify-content: center;}
 
     .grid {
-      padding: 120px;
-      max-width: 1200px;
+      padding: 25vh;
+      max-width: 100vw;
       display: grid;
-      gap: 80px;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      gap: 4vw;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       align-content: center;
       width: 100%;
       height: 100%;
-      fill: 2px solid yellow;
-      border-style: solid;
-      border-width: 0;
-      background-color: greenyellow;
-    }
-
+      fill: 2px solid;
+      border-style:double;
+      border-width: 7px;
+      background-color: rgba(174, 255, 51, 0.185);}
 
     .circle {
       aspect-ratio: 1/1;
-      background-color: blue;
+      background-color:   rgba(0, 0, 255, 0.186);
       border-style: solid;
-      border-width: 0;
+      border-width: 2px;
       position: relative;
-      border-radius: 50%;
-    }
+      border-radius: 50%;}
 
     .circle:hover {
-      background-color:  fuchsia;
-    }
+      background-color:  yellow;}
+
+    .circle2 {
+      aspect-ratio: 1/1;
+      background-color: rgba(0, 0, 255, 0.186);
+      border-style: solid;
+      border-width: 2px;
+      position: relative;
+      border-radius: 50%;}
+
+    .circle2:hover {
+      background-color:  greenyellow;}
+
 
     .circledisco {
       aspect-ratio: 1/1;
       position: relative;
-      background-color: blue;
+      background-color:  rgba(0, 0, 255, 0.186);
       border-radius: 50%;
-    }
-
+      border-width: 2px;
+      border-style: solid; }
 
     .circledisco:hover {
       animation-name: circledisco;
       animation-duration: 1s;
       animation-iteration-count: infinite;
       animation-timing-function: ease-in-out;
-    }
+      animation-delay: 0.2s;}
 
+      .column1:hover{
+      cursor:url(“yellowcursor.png”), pointer;}
+
+      .column2:hover{
+      cursor:url(“”), help;}
+
+      .column3:hover{
+      cursor:url(“”), grabbing;}
+
+      .column4:hover{
+      cursor:url(“”), move;}
+
+      .column5:hover{
+      cursor:url(“”), progress;}
+
+      .column6:hover{
+      cursor:url(“”), e-resize;}
 
     @keyframes circledisco {
-      0% {
-        background-color: rgb(130, 255, 168);
-      }
+      0% {background-color: rgb(130, 255, 168);}
 
-      25% {
-        background-color: fuchsia;
-      }
+      25% {background-color: fuchsia;}
 
-      50% {
-        background-color: yellow;
-      }
+      50% {background-color: yellow;}
 
-      75% {
-        background-color: blue;
-      }
+      75% {background-color: blue;}
 
-      100% {
-        background-color: red;
-      }
-    }
+      100% {background-color: red;}}
   </style>
 </head>
 
-
 <body class="main">
-
-
   <div class="grid">
-    <div class="circle"> </div>
-    <div class="circle"> </div>
-    <div class="circle"> </div>
-    <div class="circle"> </div>
-    <div class="circle"> </div>
-    <div class="circle"> </div>
-    <div class="circle"> </div>
-    <div class="circle"> </div>
-    <div class="circledisco"></div>
-    <div class="circle"> </div>
-    <div class="circle"> </div>
-    <div class="circle"> </div>
-    <div class="circle"> </div>
-    <div class="circle"> </div>
-    <div class="circle"> </div>
+    <div class="circle column1"> </div>
+    <div class="circle2 column2"> </div>
+    <div class="circle column3"> </div>
+    <div class="circle2 column4"> </div>
+    <div class="circle column5"> </div>
+    <div class="circle2 column6"> </div>
+    <div class="circle column1"> </div>
+    <div class="circle2 column2"> </div>
+    <div class="circledisco column3"></div>
+    <div class="circle2 column4"> </div>
+    <div class="circle column5"> </div>
+    <div class="circle2 column6"> </div>
+    <div class="circle column1"> </div>
+    <div class="circle2 column2"> </div>
+    <div class="circle column3"> </div>
+    <div class="circle2 column4"> </div>
+    <div class="circle column5"> </div>
+    <div class="circle2 column6"> </div>
   </div>
-
-
 </body>
-
 </html>
